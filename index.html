@@ -1,0 +1,582 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traabajo Matem&aacute;ticas - 2&deg; Trimestre</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">📊 PROYECTO ESCOLAR</div>
+            <h1>Festival Escolar</h1>
+            <p class="hero-subtitle">Análisis económico integral: cálculo de precios, aforos y estrategia de ingresos</p>
+            <a href="#casos" class="btn btn-primary">Explorar análisis</a>
+        </div>
+        <div class="hero-decoration"></div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        <!-- DATOS INICIALES -->
+        <section id="datos" class="section">
+            <div class="section-header">
+                <h2>Datos iniciales del evento</h2>
+                <p class="section-subtitle">Parámetros y restricciones del problema</p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="info-card">
+                    <div class="card-icon">💰</div>
+                    <h3>Inversión requerida</h3>
+                    <p class="card-value">300 €</p>
+                    <p class="card-label">Alquiler del espacio</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="card-icon">🎪</div>
+                    <h3>Actividades</h3>
+                    <p class="card-value">3</p>
+                    <p class="card-label">Concierto, Teatro, Taller</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="card-icon">👥</div>
+                    <h3>Aforo máximo adultos</h3>
+                    <p class="card-value">100</p>
+                    <p class="card-label">Asientos disponibles</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="card-icon">👨‍🎓</div>
+                    <h3>Aforo máximo estudiantes</h3>
+                    <p class="card-value">50</p>
+                    <p class="card-label">Asientos disponibles</p>
+                </div>
+            </div>
+
+            <div class="formula-box">
+                <h3>Ecuación fundamental</h3>
+                <div class="formula">
+                    <span class="formula-var">I</span> = (<span class="formula-var">PA</span> × 100) + (<span class="formula-var">PE</span> × 50)
+                </div>
+                <p class="formula-note">Donde <strong>I</strong> = Ingresos totales | <strong>PA</strong> = Precio adultos | <strong>PE</strong> = Precio estudiantes</p>
+            </div>
+
+            <div class="constraint-box">
+                <h4>⚠️ Restricción fundamental</h4>
+                <p>Los ingresos totales deben ser como mínimo de <strong>300 €</strong> para cubrir el alquiler</p>
+                <div class="formula" style="margin-top: 12px;">I ≥ 300 €</div>
+            </div>
+        </section>
+
+        <!-- CASOS DE ESTUDIO -->
+        <section id="casos" class="section">
+            <div class="section-header">
+                <h2>Casos de estudio</h2>
+                <p class="section-subtitle">Diferentes escenarios de fijación de precios</p>
+            </div>
+
+            <!-- CASO 1 -->
+            <article class="case-card">
+                <div class="case-number">01</div>
+                <div class="case-content">
+                    <h3>Entrada única para todos</h3>
+                    <p class="case-subtitle">PA = PE = P (Precio uniforme)</p>
+                    
+                    <div class="case-body">
+                        <p>Modelo simplificado donde todos los asistentes pagan el mismo precio, independientemente de su categoría.</p>
+                        
+                        <div class="calculation-block">
+                            <h4>Cálculo</h4>
+                            <div class="formula">150P = 300 €</div>
+                            <p class="formula-result">↑ <strong>P = 2 €</strong> (precio mínimo)</p>
+                        </div>
+
+                        <div class="insight-box">
+                            <h4>📌 Conclusión</h4>
+                            <ul>
+                                <li>A partir de 2 €, se cubren los costos</li>
+                                <li>Con precios superiores a 5 €, disminuye la demanda</li>
+                                <li>Ideal para maximizar asistencia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CASO 2 -->
+            <article class="case-card">
+                <div class="case-number">02</div>
+                <div class="case-content">
+                    <h3>Precios diferenciados</h3>
+                    <p class="case-subtitle">PA ≠ PE (Respeto al poder adquisitivo)</p>
+                    
+                    <div class="case-body">
+                        <p>Reconoce las diferencias económicas entre adultos y estudiantes, optimizando ingresos.</p>
+                        
+                        <div class="calculation-block">
+                            <h4>Ecuación</h4>
+                            <div class="formula">100PA + 50PE = 300</div>
+                        </div>
+
+                        <div class="strategy-grid">
+                            <div class="strategy-option low">
+                                <div class="strategy-label">🔵 Precios bajos</div>
+                                <p><strong>PE: 1 €</strong> | <strong>PA: 2.5 €</strong></p>
+                                <div class="strategy-result">I = 300 € <span class="status-neutral">(Cubre costos)</span></div>
+                            </div>
+                            <div class="strategy-option medium">
+                                <div class="strategy-label">🟢 Recomendado</div>
+                                <p><strong>PE: 2 €</strong> | <strong>PA: 3 €</strong></p>
+                                <div class="strategy-result">I = 400 € <span class="status-positive">✓ +100 € beneficio</span></div>
+                            </div>
+                            <div class="strategy-option high">
+                                <div class="strategy-label">🔴 Precios altos</div>
+                                <p><strong>PE: 3 €</strong> | <strong>PA: 5 €</strong></p>
+                                <div class="strategy-result">I = 650 € <span class="status-positive">✓ +350 € beneficio</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CASO 3 -->
+            <article class="case-card">
+                <div class="case-number">03</div>
+                <div class="case-content">
+                    <h3>Entradas separadas por actividad</h3>
+                    <p class="case-subtitle">Libertad de elección del público</p>
+                    
+                    <div class="case-body">
+                        <p>Cada persona compra solo para las actividades que le interesan (máximo 3 tickets).</p>
+                        
+                        <div class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Actividad</th>
+                                        <th>Adultos</th>
+                                        <th>Estudiantes</th>
+                                        <th>Total por actividad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="activity-name">✏️ Talleres</td>
+                                        <td>2 €</td>
+                                        <td>2 €</td>
+                                        <td class="amount">100×2 + 50×2 = 300 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="activity-name">🎬 Teatro</td>
+                                        <td>2 €</td>
+                                        <td>2 €</td>
+                                        <td class="amount">100×2 + 50×2 = 300 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="activity-name">🎵 Concierto</td>
+                                        <td>3 €</td>
+                                        <td>2 €</td>
+                                        <td class="amount">100×3 + 50×2 = 400 €</td>
+                                    </tr>
+                                    <tr class="total-row">
+                                        <td colspan="4">✅ Beneficio total: <strong>700 €</strong> (después de pagar 300 € de alquiler)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CASO 4 -->
+            <article class="case-card">
+                <div class="case-number">04</div>
+                <div class="case-content">
+                    <h3>Modelo premium de máxima rentabilidad</h3>
+                    <p class="case-subtitle">Optimización de beneficios</p>
+                    
+                    <div class="case-body">
+                        <p>Estrategia agresiva manteniendo asequibilidad. Ideal si el marketing es efectivo.</p>
+                        
+                        <div class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Actividad</th>
+                                        <th>Adultos</th>
+                                        <th>Estudiantes</th>
+                                        <th>Total por actividad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="activity-name">✏️ Talleres</td>
+                                        <td>3 €</td>
+                                        <td>2 €</td>
+                                        <td class="amount">100×3 + 50×2 = 400 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="activity-name">🎬 Teatro</td>
+                                        <td>3 €</td>
+                                        <td>2 €</td>
+                                        <td class="amount">100×3 + 50×2 = 400 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="activity-name">🎵 Concierto</td>
+                                        <td>4 €</td>
+                                        <td>3 €</td>
+                                        <td class="amount">100×4 + 50×3 = 550 €</td>
+                                    </tr>
+                                    <tr class="total-row">
+                                        <td colspan="4">✅✅ Beneficio total: <strong>1.050 €</strong> (después de pagar 300 € de alquiler)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- GRÁFICO -->
+        <section id="representacion" class="section">
+            <div class="section-header">
+                <h2>Análisis gráfico</h2>
+                <p class="section-subtitle">Visualización de la relación precio-ingresos</p>
+            </div>
+
+            <div class="chart-container">
+                <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
+                    <defs>
+                        <linearGradient id="chartGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+                        </linearGradient>
+                        <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+                            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                        </pattern>
+                    </defs>
+                    
+                    <!-- Grid -->
+                    <rect width="600" height="400" fill="url(#gridPattern)" />
+                    
+                    <!-- Axes -->
+                    <line x1="60" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                    <line x1="60" y1="30" x2="60" y2="350" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                    
+                    <!-- Grid lines -->
+                    <line x1="60" y1="80" x2="550" y2="80" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                    <line x1="60" y1="130" x2="550" y2="130" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                    <line x1="60" y1="180" x2="550" y2="180" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                    <line x1="60" y1="230" x2="550" y2="230" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                    <line x1="60" y1="280" x2="550" y2="280" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                    
+                    <!-- Data line -->
+                    <polyline fill="none" stroke="url(#chartGradient)" stroke-width="3" stroke-linecap="round" 
+                              points="80,310 160,265 240,220 320,175 400,130 480,85" opacity="0.9"/>
+                    
+                    <!-- Fill area under curve -->
+                    <polygon points="80,310 160,265 240,220 320,175 400,130 480,85 480,350 400,350 320,350 240,350 160,350 80,350" 
+                             fill="url(#chartGradient)" opacity="0.15"/>
+                    
+                    <!-- Data points -->
+                    <circle cx="80" cy="310" r="4" fill="#667eea"/>
+                    <circle cx="160" cy="265" r="4" fill="#667eea"/>
+                    <circle cx="240" cy="220" r="4" fill="#764ba2"/>
+                    <circle cx="320" cy="175" r="4" fill="#764ba2"/>
+                    <circle cx="400" cy="130" r="4" fill="#f093fb"/>
+                    <circle cx="480" cy="85" r="4" fill="#f093fb"/>
+                    
+                    <!-- Y axis labels -->
+                    <text x="50" y="355" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">0 €</text>
+                    <text x="50" y="285" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">100 €</text>
+                    <text x="50" y="235" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">200 €</text>
+                    <text x="50" y="185" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">300 €</text>
+                    <text x="50" y="135" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">400 €</text>
+                    <text x="50" y="85" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">500 €</text>
+                    
+                    <!-- X axis labels -->
+                    <text x="80" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">1 €</text>
+                    <text x="160" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">2 €</text>
+                    <text x="240" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">3 €</text>
+                    <text x="320" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">4 €</text>
+                    <text x="400" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">5 €</text>
+                    <text x="480" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">6 €</text>
+                    
+                    <!-- Axis labels -->
+                    <text x="305" y="398" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Precio de entrada (€)</text>
+                    <text x="20" y="200" font-size="13" font-weight="600" fill="#fff" text-anchor="middle" transform="rotate(-90 20 200)">Ingresos totales (€)</text>
+                </svg>
+                
+                <div class="chart-legend">
+                    <p>📊 <strong>Relación precio-ingresos:</strong> A mayor precio, mayores ingresos potenciales, pero reducción en demanda a partir de 5 €</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONCLUSIÓN -->
+        <section id="conclusion" class="section">
+            <div class="section-header">
+                <h2>Recomendación final</h2>
+                <p class="section-subtitle">Opción óptima según análisis económico</p>
+            </div>
+
+            <div class="recommendation-box">
+                <div class="recommendation-badge">✅ OPCIÓN RECOMENDADA</div>
+                <h3>Precios diferenciados con valor compartido</h3>
+                
+                <div class="price-display">
+                    <div class="price-item">
+                        <span class="price-label">Adultos</span>
+                        <span class="price-value">3 €</span>
+                    </div>
+                    <div class="price-divider">|</div>
+                    <div class="price-item">
+                        <span class="price-label">Estudiantes</span>
+                        <span class="price-value">2 €</span>
+                    </div>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-content">
+                            <h4>Cobertura de costos</h4>
+                            <p>400 € por actividad vs 300 € de gasto</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-content">
+                            <h4>Acceso inclusivo</h4>
+                            <p>Estudiantes pagan menos respetando su poder de compra</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-content">
+                            <h4>Maximización de asistencia</h4>
+                            <p>Precio aceptable = mayor aforo = garantía de éxito</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <div class="benefit-content">
+                            <h4>Margen de ganancia</h4>
+                            <p>100 € de beneficio por actividad (700 € total)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alternative-box">
+                    <h4>Alternativa simplificada</h4>
+                    <p>Si prefiere un precio único: <strong>2.50 €</strong> para todos (equilibrio entre accesibilidad e ingresos)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLAN IMPLEMENTACIÓN -->
+        <section id="plan" class="section">
+            <div class="section-header">
+                <h2>Plan de implementación</h2>
+                <p class="section-subtitle">Pasos concretos para el éxito del festival</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h4>🎟️ Definir estructura de precios</h4>
+                        <p>Establecer oficialmente: Adultos 3 €, Estudiantes 2 € por actividad. Considerar descuentos para grupos.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h4>📢 Campaña de promoción</h4>
+                        <p>Dirigir esfuerzos a estudiantes mediante carteles, redes sociales y anuncios en clase. Objetivo: garantizar aforo.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h4>⏰ Programar actividades</h4>
+                        <p>Espaciar las 3 actividades en horarios distintos para permitir que asistentes participen en varias sin conflictos.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h4>💻 Monitoreo de ventas</h4>
+                        <p>Controlar asistencia en tiempo real. Estar preparado para ajustar precios si falta demanda (máximo: 2 €).</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">5</div>
+                    <div class="timeline-content">
+                        <h4>💵 Gestionar ingresos</h4>
+                        <p>Proyectar ganancia mínima de 700 € (alcanzable) o 1.050 € (si se aplica modelo premium).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="important-note">
+                <h4>💡 Nota crítica</h4>
+                <p><strong>El éxito depende de la promoción a estudiantes.</strong> Con ~1.100 estudiantes en el instituto, llenar 50 asientos por actividad es completamente viable. La clave está en la difusión efectiva y el precio atractivo.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>📚 Proyecto académico</h4>
+                <p>Análisis económico y matemático del festival escolar</p>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h4>📋 Detalles</h4>
+                <p>4º ESO • Matemáticas • Cálculo de precios, aforos e ingresos</p>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h4>✅ Presentación</h4>
+                <p>Web interactiva con análisis completo y visualización de datos</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Trabajo académico • Diseño profesional de primer nivel</p>
+        </div>
+    </footer>
+
+    <script>
+        // =====================================================
+        // SISTEMA DE ANIMACIONES - SCROLL REVEAL LIMPIO
+        // =====================================================
+
+        // 1. SMOOTH SCROLL en enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // 2. ANIMACIONES DE ENTRADA AL HACER SCROLL
+        function initScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const elementsToAnimate = document.querySelectorAll(
+                'section, article, .hero-content, .info-card, .case-card, ' +
+                '.chart-container, .data-table, .formula-box, .recommendation-box, ' +
+                '.timeline-item, .strategy-option, .benefit-item, .insight-box'
+            );
+
+            elementsToAnimate.forEach(el => observer.observe(el));
+        }
+
+        // 3. ANIMACIÓN DE NÚMEROS (CONTADOR)
+        function initNumberAnimations() {
+            const cardValues = document.querySelectorAll('.card-value');
+
+            cardValues.forEach(element => {
+                const finalValue = parseInt(element.textContent);
+                
+                if (isNaN(finalValue) || finalValue <= 0) return;
+
+                let hasAnimated = false;
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && !hasAnimated) {
+                            hasAnimated = true;
+                            let startTimestamp = null;
+                            const duration = 1500;
+
+                            const step = (timestamp) => {
+                                if (!startTimestamp) startTimestamp = timestamp;
+                                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                                const currentValue = Math.floor(progress * finalValue);
+                                element.textContent = currentValue;
+
+                                if (progress < 1) {
+                                    requestAnimationFrame(step);
+                                }
+                            };
+
+                            requestAnimationFrame(step);
+                            observer.unobserve(element);
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                observer.observe(element);
+            });
+        }
+
+        // 4. EFECTO INTERACTIVO DE CURSOR
+        function initInteractiveGlow() {
+            const interactiveElements = document.querySelectorAll(
+                '.info-card, .case-card, .strategy-option, .benefit-item, .recommendation-box'
+            );
+
+            interactiveElements.forEach(element => {
+                element.addEventListener('mousemove', (e) => {
+                    const rect = element.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    element.style.setProperty('--mouse-x', x + 'px');
+                    element.style.setProperty('--mouse-y', y + 'px');
+                });
+
+                element.addEventListener('mouseleave', () => {
+                    element.style.setProperty('--mouse-x', '50%');
+                    element.style.setProperty('--mouse-y', '50%');
+                });
+            });
+        }
+
+        // INICIALIZAR TODO
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                initScrollAnimations();
+                initNumberAnimations();
+                initInteractiveGlow();
+            });
+        } else {
+            initScrollAnimations();
+            initNumberAnimations();
+            initInteractiveGlow();
+        }
+    </script>
+</body>
+</html>
+
+
+
