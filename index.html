@@ -17,7 +17,7 @@
     <!-- HERO SECTION -->
     <header class="hero">
         <div class="hero-content">
-            <div class="hero-badge">📊 PROYECTO ESCOLAR</div>
+            <div class="hero-badge">📊 MATEM&Aacute;TICAS 4º ESO</div>
             <h1>Festival Escolar</h1>
             <p class="hero-subtitle">Análisis económico integral: cálculo de precios, aforos y estrategia de ingresos
             </p>
@@ -397,327 +397,372 @@
                         <div class="charts-grid">
 
                             <!-- GRÁFICA 1: Número de adultos fijo -->
-                            <div class="chart-container">
-                                <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
-                                    <defs>
-                                        <linearGradient id="grad3a" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                                            <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
-                                            <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
-                                        </linearGradient>
-                                        <pattern id="grid3a" width="30" height="30" patternUnits="userSpaceOnUse">
-                                            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)"
-                                                stroke-width="1" />
-                                        </pattern>
-                                    </defs>
-                                    <rect width="600" height="400" fill="url(#grid3a)" />
-                                    <!-- Title -->
-                                    <text x="320" y="30" font-size="16" font-weight="700" fill="#fff"
-                                        text-anchor="middle">Número de adultos fijo</text>
-                                    <!-- Axes -->
-                                    <line x1="100" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)"
-                                        stroke-width="2" />
-                                    <line x1="100" y1="40" x2="100" y2="350" stroke="rgba(255,255,255,0.3)"
-                                        stroke-width="2" />
-                                    <!-- Grid lines -->
-                                    <line x1="100" y1="100" x2="550" y2="100" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="150" x2="550" y2="150" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="200" x2="550" y2="200" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="250" x2="550" y2="250" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="300" x2="550" y2="300" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <!-- Data: (0,300) (20,340) (40,380) (60,420) (80,460) (100,500) -->
-                                    <!-- Y: 0→350, 600→50. scale=0.5/unit. X: 0→100, 100→540 -->
-                                    <polyline fill="none" stroke="url(#grad3a)" stroke-width="3" stroke-linecap="round"
-                                        points="100,200 188,180 276,160 364,140 452,120 540,100" opacity="0.9" />
-                                    <polygon points="100,200 188,180 276,160 364,140 452,120 540,100 540,350 100,350"
-                                        fill="url(#grad3a)" opacity="0.15" />
-                                    <!-- Data points -->
-                                    <circle cx="100" cy="200" r="5" fill="#667eea" />
-                                    <circle cx="188" cy="180" r="5" fill="#667eea" />
-                                    <circle cx="276" cy="160" r="5" fill="#764ba2" />
-                                    <circle cx="364" cy="140" r="5" fill="#764ba2" />
-                                    <circle cx="452" cy="120" r="5" fill="#f093fb" />
-                                    <circle cx="540" cy="100" r="5" fill="#f093fb" />
-                                    <!-- Y axis labels -->
-                                    <text x="90" y="354" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">0</text>
-                                    <text x="90" y="304" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">100</text>
-                                    <text x="90" y="254" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">200</text>
-                                    <text x="90" y="204" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">300</text>
-                                    <text x="90" y="154" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">400</text>
-                                    <text x="90" y="104" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">500</text>
-                                    <!-- X axis labels -->
-                                    <text x="100" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">0</text>
-                                    <text x="188" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">20</text>
-                                    <text x="276" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">40</text>
-                                    <text x="364" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">60</text>
-                                    <text x="452" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">80</text>
-                                    <text x="540" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">100</text>
-                                    <!-- Axis labels -->
-                                    <text x="320" y="395" font-size="12" font-weight="600" fill="#fff"
-                                        text-anchor="middle">Número de estudiantes</text>
-                                    <text x="25" y="200" font-size="12" font-weight="600" fill="#fff"
-                                        text-anchor="middle" transform="rotate(-90 25 200)">Ingresos (€)</text>
-                                </svg>
-                                <div class="chart-legend">
-                                    <p>📊 <strong>Número de adultos fijo:</strong> I = 300 + 2 × nº estudiantes</p>
+                            <div class="chart-block">
+                                <div class="chart-description">
+                                    <h4><span class="chart-number">01</span>Gráfica 1</h4>
+                                    <p>La cantidad de los adultos es fija, es decir, siempre hay 100.</p>
+                                    <span class="chart-equation">y = 300 + 2x</span>
+                                </div>
+                                <div class="chart-container">
+                                    <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
+                                        <defs>
+                                            <linearGradient id="grad3a" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                                <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+                                            </linearGradient>
+                                            <pattern id="grid3a" width="30" height="30" patternUnits="userSpaceOnUse">
+                                                <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)"
+                                                    stroke-width="1" />
+                                            </pattern>
+                                        </defs>
+                                        <rect width="600" height="400" fill="url(#grid3a)" />
+                                        <!-- Title -->
+                                        <text x="320" y="30" font-size="16" font-weight="700" fill="#fff"
+                                            text-anchor="middle">Número de adultos fijo</text>
+                                        <!-- Axes -->
+                                        <line x1="100" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)"
+                                            stroke-width="2" />
+                                        <line x1="100" y1="40" x2="100" y2="350" stroke="rgba(255,255,255,0.3)"
+                                            stroke-width="2" />
+                                        <!-- Grid lines -->
+                                        <line x1="100" y1="100" x2="550" y2="100" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="150" x2="550" y2="150" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="200" x2="550" y2="200" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="250" x2="550" y2="250" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="300" x2="550" y2="300" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <!-- Data: (0,300) (20,340) (40,380) (60,420) (80,460) (100,500) -->
+                                        <!-- Y: 0→350, 600→50. scale=0.5/unit. X: 0→100, 100→540 -->
+                                        <polyline fill="none" stroke="url(#grad3a)" stroke-width="3"
+                                            stroke-linecap="round"
+                                            points="100,200 188,180 276,160 364,140 452,120 540,100" opacity="0.9" />
+                                        <polygon
+                                            points="100,200 188,180 276,160 364,140 452,120 540,100 540,350 100,350"
+                                            fill="url(#grad3a)" opacity="0.15" />
+                                        <!-- Data points -->
+                                        <circle cx="100" cy="200" r="5" fill="#667eea" />
+                                        <circle cx="188" cy="180" r="5" fill="#667eea" />
+                                        <circle cx="276" cy="160" r="5" fill="#764ba2" />
+                                        <circle cx="364" cy="140" r="5" fill="#764ba2" />
+                                        <circle cx="452" cy="120" r="5" fill="#f093fb" />
+                                        <circle cx="540" cy="100" r="5" fill="#f093fb" />
+                                        <!-- Y axis labels -->
+                                        <text x="90" y="354" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">0</text>
+                                        <text x="90" y="304" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">100</text>
+                                        <text x="90" y="254" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">200</text>
+                                        <text x="90" y="204" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">300</text>
+                                        <text x="90" y="154" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">400</text>
+                                        <text x="90" y="104" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">500</text>
+                                        <!-- X axis labels -->
+                                        <text x="100" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">0</text>
+                                        <text x="188" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">20</text>
+                                        <text x="276" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">40</text>
+                                        <text x="364" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">60</text>
+                                        <text x="452" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">80</text>
+                                        <text x="540" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">100</text>
+                                        <!-- Axis labels -->
+                                        <text x="320" y="395" font-size="12" font-weight="600" fill="#fff"
+                                            text-anchor="middle">Número de estudiantes</text>
+                                        <text x="25" y="200" font-size="12" font-weight="600" fill="#fff"
+                                            text-anchor="middle" transform="rotate(-90 25 200)">Ingresos (€)</text>
+                                    </svg>
+                                    <div class="chart-legend">
+                                        <p>📊 <strong>Número de adultos fijo:</strong> I = 300 + 2 × nº estudiantes</p>
+                                    </div>
                                 </div>
                             </div>
+
+                            <br>
 
                             <!-- GRÁFICA 2: Número de estudiantes fijo -->
-                            <div class="chart-container">
-                                <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
-                                    <defs>
-                                        <linearGradient id="grad3b" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
-                                            <stop offset="50%" style="stop-color:#38f9d7;stop-opacity:1" />
-                                            <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
-                                        </linearGradient>
-                                        <pattern id="grid3b" width="30" height="30" patternUnits="userSpaceOnUse">
-                                            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)"
-                                                stroke-width="1" />
-                                        </pattern>
-                                    </defs>
-                                    <rect width="600" height="400" fill="url(#grid3b)" />
-                                    <text x="320" y="30" font-size="16" font-weight="700" fill="#fff"
-                                        text-anchor="middle">Número de estudiantes fijo</text>
-                                    <line x1="100" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)"
-                                        stroke-width="2" />
-                                    <line x1="100" y1="40" x2="100" y2="350" stroke="rgba(255,255,255,0.3)"
-                                        stroke-width="2" />
-                                    <line x1="100" y1="100" x2="550" y2="100" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="150" x2="550" y2="150" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="200" x2="550" y2="200" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="250" x2="550" y2="250" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="300" x2="550" y2="300" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <!-- Data: (0,100) (30,190) (60,280) (90,370) (120,460) (150,550) -->
-                                    <polyline fill="none" stroke="url(#grad3b)" stroke-width="3" stroke-linecap="round"
-                                        points="100,300 188,255 276,210 364,165 452,120 540,75" opacity="0.9" />
-                                    <polygon points="100,300 188,255 276,210 364,165 452,120 540,75 540,350 100,350"
-                                        fill="url(#grad3b)" opacity="0.15" />
-                                    <circle cx="100" cy="300" r="5" fill="#43e97b" />
-                                    <circle cx="188" cy="255" r="5" fill="#43e97b" />
-                                    <circle cx="276" cy="210" r="5" fill="#38f9d7" />
-                                    <circle cx="364" cy="165" r="5" fill="#38f9d7" />
-                                    <circle cx="452" cy="120" r="5" fill="#00f2fe" />
-                                    <circle cx="540" cy="75" r="5" fill="#00f2fe" />
-                                    <!-- Y axis labels -->
-                                    <text x="90" y="354" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">0</text>
-                                    <text x="90" y="304" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">100</text>
-                                    <text x="90" y="254" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">200</text>
-                                    <text x="90" y="204" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">300</text>
-                                    <text x="90" y="154" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">400</text>
-                                    <text x="90" y="104" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">500</text>
-                                    <text x="90" y="58" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">600</text>
-                                    <!-- X axis labels -->
-                                    <text x="100" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">0</text>
-                                    <text x="188" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">30</text>
-                                    <text x="276" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">60</text>
-                                    <text x="364" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">90</text>
-                                    <text x="452" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">120</text>
-                                    <text x="540" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">150</text>
-                                    <text x="320" y="395" font-size="12" font-weight="600" fill="#fff"
-                                        text-anchor="middle">Número de adultos</text>
-                                    <text x="25" y="200" font-size="12" font-weight="600" fill="#fff"
-                                        text-anchor="middle" transform="rotate(-90 25 200)">Ingresos (€)</text>
-                                </svg>
-                                <div class="chart-legend">
-                                    <p>📊 <strong>Número de estudiantes fijo:</strong> I = 100 + 3 × nº adultos</p>
+                            <div class="chart-block">
+                                <div class="chart-description">
+                                    <h4><span class="chart-number">02</span>Gráfica 2</h4>
+                                    <p>La cantidad de los estudiantes es fija, es decir, siempre hay 50.</p>
+                                    <span class="chart-equation">y = 100 + 3x</span>
+                                </div>
+                                <div class="chart-container">
+                                    <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
+                                        <defs>
+                                            <linearGradient id="grad3b" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+                                                <stop offset="50%" style="stop-color:#38f9d7;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+                                            </linearGradient>
+                                            <pattern id="grid3b" width="30" height="30" patternUnits="userSpaceOnUse">
+                                                <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)"
+                                                    stroke-width="1" />
+                                            </pattern>
+                                        </defs>
+                                        <rect width="600" height="400" fill="url(#grid3b)" />
+                                        <text x="320" y="30" font-size="16" font-weight="700" fill="#fff"
+                                            text-anchor="middle">Número de estudiantes fijo</text>
+                                        <line x1="100" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)"
+                                            stroke-width="2" />
+                                        <line x1="100" y1="40" x2="100" y2="350" stroke="rgba(255,255,255,0.3)"
+                                            stroke-width="2" />
+                                        <line x1="100" y1="100" x2="550" y2="100" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="150" x2="550" y2="150" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="200" x2="550" y2="200" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="250" x2="550" y2="250" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="300" x2="550" y2="300" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <!-- Data: (0,100) (30,190) (60,280) (90,370) (120,460) (150,550) -->
+                                        <polyline fill="none" stroke="url(#grad3b)" stroke-width="3"
+                                            stroke-linecap="round"
+                                            points="100,300 188,255 276,210 364,165 452,120 540,75" opacity="0.9" />
+                                        <polygon points="100,300 188,255 276,210 364,165 452,120 540,75 540,350 100,350"
+                                            fill="url(#grad3b)" opacity="0.15" />
+                                        <circle cx="100" cy="300" r="5" fill="#43e97b" />
+                                        <circle cx="188" cy="255" r="5" fill="#43e97b" />
+                                        <circle cx="276" cy="210" r="5" fill="#38f9d7" />
+                                        <circle cx="364" cy="165" r="5" fill="#38f9d7" />
+                                        <circle cx="452" cy="120" r="5" fill="#00f2fe" />
+                                        <circle cx="540" cy="75" r="5" fill="#00f2fe" />
+                                        <!-- Y axis labels -->
+                                        <text x="90" y="354" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">0</text>
+                                        <text x="90" y="304" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">100</text>
+                                        <text x="90" y="254" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">200</text>
+                                        <text x="90" y="204" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">300</text>
+                                        <text x="90" y="154" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">400</text>
+                                        <text x="90" y="104" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">500</text>
+                                        <text x="90" y="58" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">600</text>
+                                        <!-- X axis labels -->
+                                        <text x="100" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">0</text>
+                                        <text x="188" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">30</text>
+                                        <text x="276" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">60</text>
+                                        <text x="364" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">90</text>
+                                        <text x="452" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">120</text>
+                                        <text x="540" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">150</text>
+                                        <text x="320" y="395" font-size="12" font-weight="600" fill="#fff"
+                                            text-anchor="middle">Número de adultos</text>
+                                        <text x="25" y="200" font-size="12" font-weight="600" fill="#fff"
+                                            text-anchor="middle" transform="rotate(-90 25 200)">Ingresos (€)</text>
+                                    </svg>
+                                    <div class="chart-legend">
+                                        <p>📊 <strong>Número de estudiantes fijo:</strong> I = 100 + 3 × nº adultos</p>
+                                    </div>
                                 </div>
                             </div>
+
+                            <br>
 
                             <!-- GRÁFICA 3: Precio de adultos fijo -->
-                            <div class="chart-container">
-                                <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
-                                    <defs>
-                                        <linearGradient id="grad3c" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" style="stop-color:#f77062;stop-opacity:1" />
-                                            <stop offset="50%" style="stop-color:#fe5196;stop-opacity:1" />
-                                            <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
-                                        </linearGradient>
-                                        <pattern id="grid3c" width="30" height="30" patternUnits="userSpaceOnUse">
-                                            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)"
-                                                stroke-width="1" />
-                                        </pattern>
-                                    </defs>
-                                    <rect width="600" height="400" fill="url(#grid3c)" />
-                                    <text x="320" y="30" font-size="16" font-weight="700" fill="#fff"
-                                        text-anchor="middle">Precio de adultos fijo</text>
-                                    <line x1="100" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)"
-                                        stroke-width="2" />
-                                    <line x1="100" y1="40" x2="100" y2="350" stroke="rgba(255,255,255,0.3)"
-                                        stroke-width="2" />
-                                    <line x1="100" y1="100" x2="550" y2="100" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="150" x2="550" y2="150" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="200" x2="550" y2="200" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="250" x2="550" y2="250" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="300" x2="550" y2="300" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <!-- Data: (0,300) (1,350) (2,400) (3,450) (4,500) (5,550) -->
-                                    <polyline fill="none" stroke="url(#grad3c)" stroke-width="3" stroke-linecap="round"
-                                        points="100,200 188,175 276,150 364,125 452,100 540,75" opacity="0.9" />
-                                    <polygon points="100,200 188,175 276,150 364,125 452,100 540,75 540,350 100,350"
-                                        fill="url(#grad3c)" opacity="0.15" />
-                                    <circle cx="100" cy="200" r="5" fill="#f77062" />
-                                    <circle cx="188" cy="175" r="5" fill="#f77062" />
-                                    <circle cx="276" cy="150" r="5" fill="#fe5196" />
-                                    <circle cx="364" cy="125" r="5" fill="#fe5196" />
-                                    <circle cx="452" cy="100" r="5" fill="#f093fb" />
-                                    <circle cx="540" cy="75" r="5" fill="#f093fb" />
-                                    <!-- Y axis labels -->
-                                    <text x="90" y="354" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">0</text>
-                                    <text x="90" y="304" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">100</text>
-                                    <text x="90" y="254" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">200</text>
-                                    <text x="90" y="204" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">300</text>
-                                    <text x="90" y="154" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">400</text>
-                                    <text x="90" y="104" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">500</text>
-                                    <text x="90" y="58" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">600</text>
-                                    <!-- X axis labels -->
-                                    <text x="100" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">0 €</text>
-                                    <text x="188" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">1 €</text>
-                                    <text x="276" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">2 €</text>
-                                    <text x="364" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">3 €</text>
-                                    <text x="452" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">4 €</text>
-                                    <text x="540" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">5 €</text>
-                                    <text x="320" y="395" font-size="12" font-weight="600" fill="#fff"
-                                        text-anchor="middle">Precio de estudiantes (€)</text>
-                                    <text x="25" y="200" font-size="12" font-weight="600" fill="#fff"
-                                        text-anchor="middle" transform="rotate(-90 25 200)">Ingresos (€)</text>
-                                </svg>
-                                <div class="chart-legend">
-                                    <p>📊 <strong>Precio de adultos fijo:</strong> I = 300 + 50 × precio estudiantes</p>
+                            <div class="chart-block">
+                                <div class="chart-description">
+                                    <h4><span class="chart-number">03</span>Gráfica 3</h4>
+                                    <p>El precio de los adultos es fijo (PA = 3 €), con esta gráfica vemos cómo varían
+                                        los
+                                        ingresos dependiendo únicamente del dinero que pagan los
+                                        estudiantes:</p>
+                                </div>
+                                <div class="chart-container">
+                                    <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
+                                        <defs>
+                                            <linearGradient id="grad3c" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" style="stop-color:#f77062;stop-opacity:1" />
+                                                <stop offset="50%" style="stop-color:#fe5196;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+                                            </linearGradient>
+                                            <pattern id="grid3c" width="30" height="30" patternUnits="userSpaceOnUse">
+                                                <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)"
+                                                    stroke-width="1" />
+                                            </pattern>
+                                        </defs>
+                                        <rect width="600" height="400" fill="url(#grid3c)" />
+                                        <text x="320" y="30" font-size="16" font-weight="700" fill="#fff"
+                                            text-anchor="middle">Precio de adultos fijo</text>
+                                        <line x1="100" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)"
+                                            stroke-width="2" />
+                                        <line x1="100" y1="40" x2="100" y2="350" stroke="rgba(255,255,255,0.3)"
+                                            stroke-width="2" />
+                                        <line x1="100" y1="100" x2="550" y2="100" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="150" x2="550" y2="150" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="200" x2="550" y2="200" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="250" x2="550" y2="250" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="300" x2="550" y2="300" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <!-- Data: (0,300) (1,350) (2,400) (3,450) (4,500) (5,550) -->
+                                        <polyline fill="none" stroke="url(#grad3c)" stroke-width="3"
+                                            stroke-linecap="round"
+                                            points="100,200 188,175 276,150 364,125 452,100 540,75" opacity="0.9" />
+                                        <polygon points="100,200 188,175 276,150 364,125 452,100 540,75 540,350 100,350"
+                                            fill="url(#grad3c)" opacity="0.15" />
+                                        <circle cx="100" cy="200" r="5" fill="#f77062" />
+                                        <circle cx="188" cy="175" r="5" fill="#f77062" />
+                                        <circle cx="276" cy="150" r="5" fill="#fe5196" />
+                                        <circle cx="364" cy="125" r="5" fill="#fe5196" />
+                                        <circle cx="452" cy="100" r="5" fill="#f093fb" />
+                                        <circle cx="540" cy="75" r="5" fill="#f093fb" />
+                                        <!-- Y axis labels -->
+                                        <text x="90" y="354" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">0</text>
+                                        <text x="90" y="304" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">100</text>
+                                        <text x="90" y="254" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">200</text>
+                                        <text x="90" y="204" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">300</text>
+                                        <text x="90" y="154" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">400</text>
+                                        <text x="90" y="104" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">500</text>
+                                        <text x="90" y="58" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">600</text>
+                                        <!-- X axis labels -->
+                                        <text x="100" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">0 €</text>
+                                        <text x="188" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">1 €</text>
+                                        <text x="276" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">2 €</text>
+                                        <text x="364" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">3 €</text>
+                                        <text x="452" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">4 €</text>
+                                        <text x="540" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">5 €</text>
+                                        <text x="320" y="395" font-size="12" font-weight="600" fill="#fff"
+                                            text-anchor="middle">Precio de estudiantes (€)</text>
+                                        <text x="25" y="200" font-size="12" font-weight="600" fill="#fff"
+                                            text-anchor="middle" transform="rotate(-90 25 200)">Ingresos (€)</text>
+                                    </svg>
+                                    <div class="chart-legend">
+                                        <p>📊 <strong>Precio de adultos fijo:</strong> I = 300 + 50 × precio estudiantes
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
 
+                            <br>
+
                             <!-- GRÁFICA 4: Precio de estudiantes fijo -->
-                            <div class="chart-container">
-                                <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
-                                    <defs>
-                                        <linearGradient id="grad3d" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" style="stop-color:#fee140;stop-opacity:1" />
-                                            <stop offset="50%" style="stop-color:#fa709a;stop-opacity:1" />
-                                            <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
-                                        </linearGradient>
-                                        <pattern id="grid3d" width="30" height="30" patternUnits="userSpaceOnUse">
-                                            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)"
-                                                stroke-width="1" />
-                                        </pattern>
-                                    </defs>
-                                    <rect width="600" height="400" fill="url(#grid3d)" />
-                                    <text x="320" y="30" font-size="16" font-weight="700" fill="#fff"
-                                        text-anchor="middle">Precio de estudiantes fijo</text>
-                                    <line x1="100" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)"
-                                        stroke-width="2" />
-                                    <line x1="100" y1="40" x2="100" y2="350" stroke="rgba(255,255,255,0.3)"
-                                        stroke-width="2" />
-                                    <line x1="100" y1="100" x2="550" y2="100" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="150" x2="550" y2="150" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="200" x2="550" y2="200" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="250" x2="550" y2="250" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <line x1="100" y1="300" x2="550" y2="300" stroke="rgba(255,255,255,0.05)"
-                                        stroke-width="1" />
-                                    <!-- Data: (0,100) (1,200) (2,300) (3,400) (4,500) (5,600) -->
-                                    <polyline fill="none" stroke="url(#grad3d)" stroke-width="3" stroke-linecap="round"
-                                        points="100,300 188,250 276,200 364,150 452,100 540,50" opacity="0.9" />
-                                    <polygon points="100,300 188,250 276,200 364,150 452,100 540,50 540,350 100,350"
-                                        fill="url(#grad3d)" opacity="0.15" />
-                                    <circle cx="100" cy="300" r="5" fill="#fee140" />
-                                    <circle cx="188" cy="250" r="5" fill="#fee140" />
-                                    <circle cx="276" cy="200" r="5" fill="#fa709a" />
-                                    <circle cx="364" cy="150" r="5" fill="#fa709a" />
-                                    <circle cx="452" cy="100" r="5" fill="#f093fb" />
-                                    <circle cx="540" cy="50" r="5" fill="#f093fb" />
-                                    <!-- Y axis labels -->
-                                    <text x="90" y="354" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">0</text>
-                                    <text x="90" y="304" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">100</text>
-                                    <text x="90" y="254" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">200</text>
-                                    <text x="90" y="204" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">300</text>
-                                    <text x="90" y="154" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">400</text>
-                                    <text x="90" y="104" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">500</text>
-                                    <text x="90" y="58" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="end">600</text>
-                                    <!-- X axis labels -->
-                                    <text x="100" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">0 €</text>
-                                    <text x="188" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">1 €</text>
-                                    <text x="276" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">2 €</text>
-                                    <text x="364" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">3 €</text>
-                                    <text x="452" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">4 €</text>
-                                    <text x="540" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
-                                        text-anchor="middle">5 €</text>
-                                    <text x="320" y="395" font-size="12" font-weight="600" fill="#fff"
-                                        text-anchor="middle">Precio de adultos (€)</text>
-                                    <text x="25" y="200" font-size="12" font-weight="600" fill="#fff"
-                                        text-anchor="middle" transform="rotate(-90 25 200)">Ingresos (€)</text>
-                                </svg>
-                                <div class="chart-legend">
-                                    <p>📊 <strong>Precio de estudiantes fijo:</strong> I = 100 + 100 × precio adultos
-                                    </p>
+                            <div class="chart-block">
+                                <div class="chart-description">
+                                    <h4><span class="chart-number">04</span>Gráfica 4</h4>
+                                    <p>El precio de los estudiantes es fijo (PE = 2 €), con esta gráfica vemos cómo
+                                        varían
+                                        los ingresos dependiendo únicamente del dinero que pagan los
+                                        adultos:</p>
+                                </div>
+                                <div class="chart-container">
+                                    <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
+                                        <defs>
+                                            <linearGradient id="grad3d" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" style="stop-color:#fee140;stop-opacity:1" />
+                                                <stop offset="50%" style="stop-color:#fa709a;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+                                            </linearGradient>
+                                            <pattern id="grid3d" width="30" height="30" patternUnits="userSpaceOnUse">
+                                                <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)"
+                                                    stroke-width="1" />
+                                            </pattern>
+                                        </defs>
+                                        <rect width="600" height="400" fill="url(#grid3d)" />
+                                        <text x="320" y="30" font-size="16" font-weight="700" fill="#fff"
+                                            text-anchor="middle">Precio de estudiantes fijo</text>
+                                        <line x1="100" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)"
+                                            stroke-width="2" />
+                                        <line x1="100" y1="40" x2="100" y2="350" stroke="rgba(255,255,255,0.3)"
+                                            stroke-width="2" />
+                                        <line x1="100" y1="100" x2="550" y2="100" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="150" x2="550" y2="150" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="200" x2="550" y2="200" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="250" x2="550" y2="250" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <line x1="100" y1="300" x2="550" y2="300" stroke="rgba(255,255,255,0.05)"
+                                            stroke-width="1" />
+                                        <!-- Data: (0,100) (1,200) (2,300) (3,400) (4,500) (5,600) -->
+                                        <polyline fill="none" stroke="url(#grad3d)" stroke-width="3"
+                                            stroke-linecap="round"
+                                            points="100,300 188,250 276,200 364,150 452,100 540,50" opacity="0.9" />
+                                        <polygon points="100,300 188,250 276,200 364,150 452,100 540,50 540,350 100,350"
+                                            fill="url(#grad3d)" opacity="0.15" />
+                                        <circle cx="100" cy="300" r="5" fill="#fee140" />
+                                        <circle cx="188" cy="250" r="5" fill="#fee140" />
+                                        <circle cx="276" cy="200" r="5" fill="#fa709a" />
+                                        <circle cx="364" cy="150" r="5" fill="#fa709a" />
+                                        <circle cx="452" cy="100" r="5" fill="#f093fb" />
+                                        <circle cx="540" cy="50" r="5" fill="#f093fb" />
+                                        <!-- Y axis labels -->
+                                        <text x="90" y="354" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">0</text>
+                                        <text x="90" y="304" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">100</text>
+                                        <text x="90" y="254" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">200</text>
+                                        <text x="90" y="204" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">300</text>
+                                        <text x="90" y="154" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">400</text>
+                                        <text x="90" y="104" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">500</text>
+                                        <text x="90" y="58" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="end">600</text>
+                                        <!-- X axis labels -->
+                                        <text x="100" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">0 €</text>
+                                        <text x="188" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">1 €</text>
+                                        <text x="276" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">2 €</text>
+                                        <text x="364" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">3 €</text>
+                                        <text x="452" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">4 €</text>
+                                        <text x="540" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                            text-anchor="middle">5 €</text>
+                                        <text x="320" y="395" font-size="12" font-weight="600" fill="#fff"
+                                            text-anchor="middle">Precio de adultos (€)</text>
+                                        <text x="25" y="200" font-size="12" font-weight="600" fill="#fff"
+                                            text-anchor="middle" transform="rotate(-90 25 200)">Ingresos (€)</text>
+                                    </svg>
+                                    <div class="chart-legend">
+                                        <p>📊 <strong>Precio de estudiantes fijo:</strong> I = 100 + 100 × precio
+                                            adultos
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
 
@@ -893,7 +938,20 @@
             });
         });
 
-        // 2. OBSERVER ÚNICO para animaciones de scroll + contadores
+        // 2. PREPARAR CONTADORES: poner a 0 INMEDIATAMENTE (antes de que nada sea visible)
+        document.querySelectorAll('.card-value').forEach(el => {
+            const originalText = el.textContent.trim();
+            const finalValue = parseInt(originalText);
+            if (!isNaN(finalValue) && finalValue > 0) {
+                const suffix = originalText.replace(String(finalValue), '');
+                el.dataset.finalValue = finalValue;
+                el.dataset.suffix = suffix;
+                el.dataset.originalText = originalText;
+                el.textContent = '0' + suffix;
+            }
+        });
+
+        // 3. OBSERVER ÚNICO para animaciones de scroll + contadores
         (function initAnimations() {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -904,20 +962,24 @@
                     // Animación de entrada
                     el.classList.add('animate-in');
 
-                    // Si es un contador numérico, animar el número
-                    if (el.classList.contains('card-value')) {
-                        const finalValue = parseInt(el.textContent);
-                        if (!isNaN(finalValue) && finalValue > 0) {
-                            let start = null;
-                            const duration = 1500;
-                            const step = (ts) => {
-                                if (!start) start = ts;
-                                const progress = Math.min((ts - start) / duration, 1);
-                                el.textContent = Math.floor(progress * finalValue);
-                                if (progress < 1) requestAnimationFrame(step);
-                            };
-                            requestAnimationFrame(step);
-                        }
+                    // Si es un contador, animar de 0 al valor final
+                    if (el.classList.contains('card-value') && el.dataset.finalValue) {
+                        const finalValue = parseInt(el.dataset.finalValue);
+                        const suffix = el.dataset.suffix;
+                        const originalText = el.dataset.originalText;
+                        let start = null;
+                        const duration = 1500;
+                        const step = (ts) => {
+                            if (!start) start = ts;
+                            const progress = Math.min((ts - start) / duration, 1);
+                            el.textContent = Math.floor(progress * finalValue) + suffix;
+                            if (progress < 1) {
+                                requestAnimationFrame(step);
+                            } else {
+                                el.textContent = originalText;
+                            }
+                        };
+                        requestAnimationFrame(step);
                     }
 
                     observer.unobserve(el);
