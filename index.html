@@ -1,19 +1,26 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Traabajo Matem&aacute;ticas - 2&deg; Trimestre</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- HERO SECTION -->
     <header class="hero">
         <div class="hero-content">
             <div class="hero-badge">📊 PROYECTO ESCOLAR</div>
             <h1>Festival Escolar</h1>
-            <p class="hero-subtitle">Análisis económico integral: cálculo de precios, aforos y estrategia de ingresos</p>
+            <p class="hero-subtitle">Análisis económico integral: cálculo de precios, aforos y estrategia de ingresos
+            </p>
             <a href="#casos" class="btn btn-primary">Explorar análisis</a>
         </div>
         <div class="hero-decoration"></div>
@@ -27,7 +34,7 @@
                 <h2>Datos iniciales del evento</h2>
                 <p class="section-subtitle">Parámetros y restricciones del problema</p>
             </div>
-            
+
             <div class="content-grid">
                 <div class="info-card">
                     <div class="card-icon">💰</div>
@@ -35,21 +42,21 @@
                     <p class="card-value">300 €</p>
                     <p class="card-label">Alquiler del espacio</p>
                 </div>
-                
+
                 <div class="info-card">
                     <div class="card-icon">🎪</div>
                     <h3>Actividades</h3>
                     <p class="card-value">3</p>
                     <p class="card-label">Concierto, Teatro, Taller</p>
                 </div>
-                
+
                 <div class="info-card">
                     <div class="card-icon">👥</div>
                     <h3>Aforo máximo adultos</h3>
                     <p class="card-value">100</p>
                     <p class="card-label">Asientos disponibles</p>
                 </div>
-                
+
                 <div class="info-card">
                     <div class="card-icon">👨‍🎓</div>
                     <h3>Aforo máximo estudiantes</h3>
@@ -61,9 +68,11 @@
             <div class="formula-box">
                 <h3>Ecuación fundamental</h3>
                 <div class="formula">
-                    <span class="formula-var">I</span> = (<span class="formula-var">PA</span> × 100) + (<span class="formula-var">PE</span> × 50)
+                    <span class="formula-var">I</span> = (<span class="formula-var">PA</span> × 100) + (<span
+                        class="formula-var">PE</span> × 50)
                 </div>
-                <p class="formula-note">Donde <strong>I</strong> = Ingresos totales | <strong>PA</strong> = Precio adultos | <strong>PE</strong> = Precio estudiantes</p>
+                <p class="formula-note">Donde <strong>I</strong> = Ingresos totales | <strong>PA</strong> = Precio
+                    adultos | <strong>PE</strong> = Precio estudiantes</p>
             </div>
 
             <div class="constraint-box">
@@ -86,10 +95,11 @@
                 <div class="case-content">
                     <h3>Entrada única para todos</h3>
                     <p class="case-subtitle">PA = PE = P (Precio uniforme)</p>
-                    
+
                     <div class="case-body">
-                        <p>Modelo simplificado donde todos los asistentes pagan el mismo precio, independientemente de su categoría.</p>
-                        
+                        <p>Modelo simplificado donde todos los asistentes pagan el mismo precio, independientemente de
+                            su categoría.</p>
+
                         <div class="calculation-block">
                             <h4>Cálculo</h4>
                             <div class="formula">150P = 300 €</div>
@@ -104,6 +114,50 @@
                                 <li>Ideal para maximizar asistencia</li>
                             </ul>
                         </div>
+
+                        <div class="strategy-section">
+                            <h4>🎯 Escenario alternativo: Garantía de cobertura</h4>
+                            <p class="strategy-text">Si el aforo no se cubre completamente, ajustaremos los precios para
+                                asegurar el ingreso mínimo de 300 €. Con aproximadamente 1134 alumnos disponibles en el
+                                instituto, es muy probable alcanzar nuestro aforo de 50 estudiantes acompañados de sus
+                                padres.</p>
+
+                            <div class="calculation-block scenario-alt">
+                                <h4>Cálculo de precio ajustado</h4>
+                                <div class="formula">PA = PE = 2,5 €</div>
+                                <p class="formula-desc">Precio aumentado para garantizar ingresos suficientes</p>
+                                <div class="formula-breakdown">
+                                    <p><strong>I</strong> = (100 × 2,5) + (50 × 2,5) = 250 + 125 = <strong
+                                            style="color: #43e97b;">375 €</strong></p>
+                                    <p class="benefit-text">📈 Beneficio obtenido: 375 - 300 = <strong
+                                            style="color: #fee140;">75 €</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="benefit-allocation">
+                                <h4>💡 Distribución del beneficio</h4>
+                                <p>Los 75 € de beneficio se destinarán a cubrir las posibles ausencias:</p>
+                                <div class="allocation-box">
+                                    <p><strong>75 € ÷ 2 € por entrada = 37 entradas adicionales</strong></p>
+                                    <p class="allocation-note">Esto garantiza que, independientemente de faltas, podemos
+                                        cubrir hasta 37 puestos extra sin incurrir en pérdidas</p>
+                                </div>
+                            </div>
+
+                            <div class="risk-mitigation">
+                                <h4>✅ Ventajas de este modelo</h4>
+                                <ul>
+                                    <li><strong>Precio uniforme:</strong> Simplicidad y equidad para todos los
+                                        asistentes</li>
+                                    <li><strong>Margen de seguridad:</strong> Cubre hasta 37 ausencias sin pérdidas
+                                        netas</li>
+                                    <li><strong>Ingresos garantizados:</strong> Superamos el mínimo requerido en 75 €
+                                    </li>
+                                    <li><strong>Máxima cobertura:</strong> Con 1134 alumnos, es casi seguro cubrir 150
+                                        plazas (100 adultos + 50 estudiantes)</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -114,10 +168,10 @@
                 <div class="case-content">
                     <h3>Precios diferenciados</h3>
                     <p class="case-subtitle">PA ≠ PE (Respeto al poder adquisitivo)</p>
-                    
+
                     <div class="case-body">
                         <p>Reconoce las diferencias económicas entre adultos y estudiantes, optimizando ingresos.</p>
-                        
+
                         <div class="calculation-block">
                             <h4>Ecuación</h4>
                             <div class="formula">100PA + 50PE = 300</div>
@@ -127,17 +181,202 @@
                             <div class="strategy-option low">
                                 <div class="strategy-label">🔵 Precios bajos</div>
                                 <p><strong>PE: 1 €</strong> | <strong>PA: 2.5 €</strong></p>
-                                <div class="strategy-result">I = 300 € <span class="status-neutral">(Cubre costos)</span></div>
+                                <div class="strategy-result">I = 300 € <span class="status-neutral">(Cubre
+                                        costos)</span></div>
                             </div>
                             <div class="strategy-option medium">
                                 <div class="strategy-label">🟢 Recomendado</div>
                                 <p><strong>PE: 2 €</strong> | <strong>PA: 3 €</strong></p>
-                                <div class="strategy-result">I = 400 € <span class="status-positive">✓ +100 € beneficio</span></div>
+                                <div class="strategy-result">I = 400 € <span class="status-positive">✓ +100 €
+                                        beneficio</span></div>
                             </div>
                             <div class="strategy-option high">
                                 <div class="strategy-label">🔴 Precios altos</div>
                                 <p><strong>PE: 3 €</strong> | <strong>PA: 5 €</strong></p>
-                                <div class="strategy-result">I = 650 € <span class="status-positive">✓ +350 € beneficio</span></div>
+                                <div class="strategy-result">I = 650 € <span class="status-positive">✓ +350 €
+                                        beneficio</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
+                            <defs>
+                                <linearGradient id="chartGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+                                </linearGradient>
+                                <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+                                    <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)"
+                                        stroke-width="1" />
+                                </pattern>
+                            </defs>
+
+                            <!-- Grid -->
+                            <rect width="600" height="400" fill="url(#gridPattern)" />
+
+                            <!-- Axes -->
+                            <line x1="100" y1="350" x2="590" y2="350" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                            <line x1="100" y1="30" x2="100" y2="350" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+
+                            <!-- Grid lines -->
+                            <line x1="100" y1="80" x2="590" y2="80" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                            <line x1="100" y1="130" x2="590" y2="130" stroke="rgba(255,255,255,0.05)"
+                                stroke-width="1" />
+                            <line x1="100" y1="180" x2="590" y2="180" stroke="rgba(255,255,255,0.05)"
+                                stroke-width="1" />
+                            <line x1="100" y1="230" x2="590" y2="230" stroke="rgba(255,255,255,0.05)"
+                                stroke-width="1" />
+                            <line x1="100" y1="280" x2="590" y2="280" stroke="rgba(255,255,255,0.05)"
+                                stroke-width="1" />
+
+                            <!-- Data line -->
+                            <polyline fill="none" stroke="url(#chartGradient)" stroke-width="3" stroke-linecap="round"
+                                points="120,310 200,265 280,220 360,175 440,130 520,85" opacity="0.9" />
+
+                            <!-- Fill area under curve -->
+                            <polygon
+                                points="120,310 200,265 280,220 360,175 440,130 520,85 520,350 440,350 360,350 280,350 200,350 120,350"
+                                fill="url(#chartGradient)" opacity="0.15" />
+
+                            <!-- Data points -->
+                            <circle cx="120" cy="310" r="4" fill="#667eea" />
+                            <circle cx="200" cy="265" r="4" fill="#667eea" />
+                            <circle cx="280" cy="220" r="4" fill="#764ba2" />
+                            <circle cx="360" cy="175" r="4" fill="#764ba2" />
+                            <circle cx="440" cy="130" r="4" fill="#f093fb" />
+                            <circle cx="520" cy="85" r="4" fill="#f093fb" />
+
+                            <!-- Y axis labels -->
+                            <text x="90" y="355" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">0
+                                €</text>
+                            <text x="90" y="285" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">100
+                                €</text>
+                            <text x="90" y="235" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">200
+                                €</text>
+                            <text x="90" y="185" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">300
+                                €</text>
+                            <text x="90" y="135" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">400
+                                €</text>
+                            <text x="90" y="85" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">500
+                                €</text>
+
+                            <!-- X axis labels -->
+                            <text x="120" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">1
+                                €</text>
+                            <text x="200" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">2
+                                €</text>
+                            <text x="280" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">3
+                                €</text>
+                            <text x="360" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">4
+                                €</text>
+                            <text x="440" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">5
+                                €</text>
+                            <text x="520" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">6
+                                €</text>
+
+                            <!-- Axis labels -->
+                            <text x="305" y="398" font-size="13" font-weight="600" fill="#fff"
+                                text-anchor="middle">Precio de entrada (€)</text>
+                            <text x="35" y="195" font-size="13" font-weight="600" fill="#fff" text-anchor="middle"
+                                transform="rotate(-90 20 200)">Ingresos totales (€)</text>
+                        </svg>
+
+                        <div class="chart-legend">
+                            <p>📊 <strong>Relación precio-ingresos:</strong> A mayor precio, mayores ingresos
+                                potenciales, pero reducción en demanda a partir de 5 €</p>
+                        </div>
+                    </div>
+
+                    <div class="case-content">
+                        <h3>Entradas separadas por actividad</h3>
+                        <p class="case-subtitle">Libertad de elección del público</p>
+
+                        <div class="case-body">
+                            <p>Cada persona compra solo para las actividades que le interesan (máximo 3 tickets).</p>
+
+                            <div class="table-wrapper">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Actividad</th>
+                                            <th>Adultos</th>
+                                            <th>Estudiantes</th>
+                                            <th>Total por actividad</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="activity-name">✏️ Talleres</td>
+                                            <td>2 €</td>
+                                            <td>2 €</td>
+                                            <td class="amount">100×2 + 50×2 = 300 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="activity-name">🎬 Teatro</td>
+                                            <td>2 €</td>
+                                            <td>2 €</td>
+                                            <td class="amount">100×2 + 50×2 = 300 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="activity-name">🎵 Concierto</td>
+                                            <td>3 €</td>
+                                            <td>2 €</td>
+                                            <td class="amount">100×3 + 50×2 = 400 €</td>
+                                        </tr>
+                                        <tr class="total-row">
+                                            <td colspan="4">✅ Beneficio total: <strong>700 €</strong> (después de pagar
+                                                300 € de alquiler)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="case-content">
+                            <h3>Modelo premium de máxima rentabilidad</h3>
+                            <p class="case-subtitle">Optimización de beneficios</p>
+
+                            <div class="case-body">
+                                <p>Estrategia agresiva manteniendo asequibilidad. Ideal si el marketing es efectivo.</p>
+
+                                <div class="table-wrapper">
+                                    <table class="data-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Actividad</th>
+                                                <th>Adultos</th>
+                                                <th>Estudiantes</th>
+                                                <th>Total por actividad</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="activity-name">✏️ Talleres</td>
+                                                <td>3 €</td>
+                                                <td>2 €</td>
+                                                <td class="amount">100×3 + 50×2 = 400 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="activity-name">🎬 Teatro</td>
+                                                <td>3 €</td>
+                                                <td>2 €</td>
+                                                <td class="amount">100×3 + 50×2 = 400 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="activity-name">🎵 Concierto</td>
+                                                <td>4 €</td>
+                                                <td>3 €</td>
+                                                <td class="amount">100×4 + 50×3 = 550 €</td>
+                                            </tr>
+                                            <tr class="total-row">
+                                                <td colspan="4">✅✅ Beneficio total: <strong>1.050 €</strong> (después de
+                                                    pagar 300 € de alquiler)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -148,176 +387,346 @@
             <article class="case-card">
                 <div class="case-number">03</div>
                 <div class="case-content">
-                    <h3>Entradas separadas por actividad</h3>
-                    <p class="case-subtitle">Libertad de elección del público</p>
-                    
+                    <h3>Representación gráfica</h3>
+                    <p class="case-subtitle">Visualización de las relaciones entre variables</p>
+
                     <div class="case-body">
-                        <p>Cada persona compra solo para las actividades que le interesan (máximo 3 tickets).</p>
-                        
-                        <div class="table-wrapper">
-                            <table class="data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Actividad</th>
-                                        <th>Adultos</th>
-                                        <th>Estudiantes</th>
-                                        <th>Total por actividad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="activity-name">✏️ Talleres</td>
-                                        <td>2 €</td>
-                                        <td>2 €</td>
-                                        <td class="amount">100×2 + 50×2 = 300 €</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="activity-name">🎬 Teatro</td>
-                                        <td>2 €</td>
-                                        <td>2 €</td>
-                                        <td class="amount">100×2 + 50×2 = 300 €</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="activity-name">🎵 Concierto</td>
-                                        <td>3 €</td>
-                                        <td>2 €</td>
-                                        <td class="amount">100×3 + 50×2 = 400 €</td>
-                                    </tr>
-                                    <tr class="total-row">
-                                        <td colspan="4">✅ Beneficio total: <strong>700 €</strong> (después de pagar 300 € de alquiler)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <p>A continuación se muestran las gráficas que representan cómo varían los ingresos en función
+                            de las distintas variables del problema.</p>
+
+                        <div class="charts-grid">
+
+                            <!-- GRÁFICA 1: Número de adultos fijo -->
+                            <div class="chart-container">
+                                <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
+                                    <defs>
+                                        <linearGradient id="grad3a" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                            <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+                                        </linearGradient>
+                                        <pattern id="grid3a" width="30" height="30" patternUnits="userSpaceOnUse">
+                                            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)"
+                                                stroke-width="1" />
+                                        </pattern>
+                                    </defs>
+                                    <rect width="600" height="400" fill="url(#grid3a)" />
+                                    <!-- Title -->
+                                    <text x="320" y="30" font-size="16" font-weight="700" fill="#fff"
+                                        text-anchor="middle">Número de adultos fijo</text>
+                                    <!-- Axes -->
+                                    <line x1="100" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)"
+                                        stroke-width="2" />
+                                    <line x1="100" y1="40" x2="100" y2="350" stroke="rgba(255,255,255,0.3)"
+                                        stroke-width="2" />
+                                    <!-- Grid lines -->
+                                    <line x1="100" y1="100" x2="550" y2="100" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="150" x2="550" y2="150" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="200" x2="550" y2="200" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="250" x2="550" y2="250" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="300" x2="550" y2="300" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <!-- Data: (0,300) (20,340) (40,380) (60,420) (80,460) (100,500) -->
+                                    <!-- Y: 0→350, 600→50. scale=0.5/unit. X: 0→100, 100→540 -->
+                                    <polyline fill="none" stroke="url(#grad3a)" stroke-width="3" stroke-linecap="round"
+                                        points="100,200 188,180 276,160 364,140 452,120 540,100" opacity="0.9" />
+                                    <polygon points="100,200 188,180 276,160 364,140 452,120 540,100 540,350 100,350"
+                                        fill="url(#grad3a)" opacity="0.15" />
+                                    <!-- Data points -->
+                                    <circle cx="100" cy="200" r="5" fill="#667eea" />
+                                    <circle cx="188" cy="180" r="5" fill="#667eea" />
+                                    <circle cx="276" cy="160" r="5" fill="#764ba2" />
+                                    <circle cx="364" cy="140" r="5" fill="#764ba2" />
+                                    <circle cx="452" cy="120" r="5" fill="#f093fb" />
+                                    <circle cx="540" cy="100" r="5" fill="#f093fb" />
+                                    <!-- Y axis labels -->
+                                    <text x="90" y="354" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">0</text>
+                                    <text x="90" y="304" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">100</text>
+                                    <text x="90" y="254" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">200</text>
+                                    <text x="90" y="204" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">300</text>
+                                    <text x="90" y="154" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">400</text>
+                                    <text x="90" y="104" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">500</text>
+                                    <!-- X axis labels -->
+                                    <text x="100" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">0</text>
+                                    <text x="188" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">20</text>
+                                    <text x="276" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">40</text>
+                                    <text x="364" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">60</text>
+                                    <text x="452" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">80</text>
+                                    <text x="540" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">100</text>
+                                    <!-- Axis labels -->
+                                    <text x="320" y="395" font-size="12" font-weight="600" fill="#fff"
+                                        text-anchor="middle">Número de estudiantes</text>
+                                    <text x="25" y="200" font-size="12" font-weight="600" fill="#fff"
+                                        text-anchor="middle" transform="rotate(-90 25 200)">Ingresos (€)</text>
+                                </svg>
+                                <div class="chart-legend">
+                                    <p>📊 <strong>Número de adultos fijo:</strong> I = 300 + 2 × nº estudiantes</p>
+                                </div>
+                            </div>
+
+                            <!-- GRÁFICA 2: Número de estudiantes fijo -->
+                            <div class="chart-container">
+                                <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
+                                    <defs>
+                                        <linearGradient id="grad3b" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+                                            <stop offset="50%" style="stop-color:#38f9d7;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+                                        </linearGradient>
+                                        <pattern id="grid3b" width="30" height="30" patternUnits="userSpaceOnUse">
+                                            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)"
+                                                stroke-width="1" />
+                                        </pattern>
+                                    </defs>
+                                    <rect width="600" height="400" fill="url(#grid3b)" />
+                                    <text x="320" y="30" font-size="16" font-weight="700" fill="#fff"
+                                        text-anchor="middle">Número de estudiantes fijo</text>
+                                    <line x1="100" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)"
+                                        stroke-width="2" />
+                                    <line x1="100" y1="40" x2="100" y2="350" stroke="rgba(255,255,255,0.3)"
+                                        stroke-width="2" />
+                                    <line x1="100" y1="100" x2="550" y2="100" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="150" x2="550" y2="150" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="200" x2="550" y2="200" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="250" x2="550" y2="250" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="300" x2="550" y2="300" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <!-- Data: (0,100) (30,190) (60,280) (90,370) (120,460) (150,550) -->
+                                    <polyline fill="none" stroke="url(#grad3b)" stroke-width="3" stroke-linecap="round"
+                                        points="100,300 188,255 276,210 364,165 452,120 540,75" opacity="0.9" />
+                                    <polygon points="100,300 188,255 276,210 364,165 452,120 540,75 540,350 100,350"
+                                        fill="url(#grad3b)" opacity="0.15" />
+                                    <circle cx="100" cy="300" r="5" fill="#43e97b" />
+                                    <circle cx="188" cy="255" r="5" fill="#43e97b" />
+                                    <circle cx="276" cy="210" r="5" fill="#38f9d7" />
+                                    <circle cx="364" cy="165" r="5" fill="#38f9d7" />
+                                    <circle cx="452" cy="120" r="5" fill="#00f2fe" />
+                                    <circle cx="540" cy="75" r="5" fill="#00f2fe" />
+                                    <!-- Y axis labels -->
+                                    <text x="90" y="354" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">0</text>
+                                    <text x="90" y="304" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">100</text>
+                                    <text x="90" y="254" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">200</text>
+                                    <text x="90" y="204" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">300</text>
+                                    <text x="90" y="154" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">400</text>
+                                    <text x="90" y="104" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">500</text>
+                                    <text x="90" y="58" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">600</text>
+                                    <!-- X axis labels -->
+                                    <text x="100" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">0</text>
+                                    <text x="188" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">30</text>
+                                    <text x="276" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">60</text>
+                                    <text x="364" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">90</text>
+                                    <text x="452" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">120</text>
+                                    <text x="540" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">150</text>
+                                    <text x="320" y="395" font-size="12" font-weight="600" fill="#fff"
+                                        text-anchor="middle">Número de adultos</text>
+                                    <text x="25" y="200" font-size="12" font-weight="600" fill="#fff"
+                                        text-anchor="middle" transform="rotate(-90 25 200)">Ingresos (€)</text>
+                                </svg>
+                                <div class="chart-legend">
+                                    <p>📊 <strong>Número de estudiantes fijo:</strong> I = 100 + 3 × nº adultos</p>
+                                </div>
+                            </div>
+
+                            <!-- GRÁFICA 3: Precio de adultos fijo -->
+                            <div class="chart-container">
+                                <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
+                                    <defs>
+                                        <linearGradient id="grad3c" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" style="stop-color:#f77062;stop-opacity:1" />
+                                            <stop offset="50%" style="stop-color:#fe5196;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+                                        </linearGradient>
+                                        <pattern id="grid3c" width="30" height="30" patternUnits="userSpaceOnUse">
+                                            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)"
+                                                stroke-width="1" />
+                                        </pattern>
+                                    </defs>
+                                    <rect width="600" height="400" fill="url(#grid3c)" />
+                                    <text x="320" y="30" font-size="16" font-weight="700" fill="#fff"
+                                        text-anchor="middle">Precio de adultos fijo</text>
+                                    <line x1="100" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)"
+                                        stroke-width="2" />
+                                    <line x1="100" y1="40" x2="100" y2="350" stroke="rgba(255,255,255,0.3)"
+                                        stroke-width="2" />
+                                    <line x1="100" y1="100" x2="550" y2="100" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="150" x2="550" y2="150" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="200" x2="550" y2="200" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="250" x2="550" y2="250" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="300" x2="550" y2="300" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <!-- Data: (0,300) (1,350) (2,400) (3,450) (4,500) (5,550) -->
+                                    <polyline fill="none" stroke="url(#grad3c)" stroke-width="3" stroke-linecap="round"
+                                        points="100,200 188,175 276,150 364,125 452,100 540,75" opacity="0.9" />
+                                    <polygon points="100,200 188,175 276,150 364,125 452,100 540,75 540,350 100,350"
+                                        fill="url(#grad3c)" opacity="0.15" />
+                                    <circle cx="100" cy="200" r="5" fill="#f77062" />
+                                    <circle cx="188" cy="175" r="5" fill="#f77062" />
+                                    <circle cx="276" cy="150" r="5" fill="#fe5196" />
+                                    <circle cx="364" cy="125" r="5" fill="#fe5196" />
+                                    <circle cx="452" cy="100" r="5" fill="#f093fb" />
+                                    <circle cx="540" cy="75" r="5" fill="#f093fb" />
+                                    <!-- Y axis labels -->
+                                    <text x="90" y="354" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">0</text>
+                                    <text x="90" y="304" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">100</text>
+                                    <text x="90" y="254" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">200</text>
+                                    <text x="90" y="204" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">300</text>
+                                    <text x="90" y="154" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">400</text>
+                                    <text x="90" y="104" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">500</text>
+                                    <text x="90" y="58" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">600</text>
+                                    <!-- X axis labels -->
+                                    <text x="100" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">0 €</text>
+                                    <text x="188" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">1 €</text>
+                                    <text x="276" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">2 €</text>
+                                    <text x="364" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">3 €</text>
+                                    <text x="452" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">4 €</text>
+                                    <text x="540" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">5 €</text>
+                                    <text x="320" y="395" font-size="12" font-weight="600" fill="#fff"
+                                        text-anchor="middle">Precio de estudiantes (€)</text>
+                                    <text x="25" y="200" font-size="12" font-weight="600" fill="#fff"
+                                        text-anchor="middle" transform="rotate(-90 25 200)">Ingresos (€)</text>
+                                </svg>
+                                <div class="chart-legend">
+                                    <p>📊 <strong>Precio de adultos fijo:</strong> I = 300 + 50 × precio estudiantes</p>
+                                </div>
+                            </div>
+
+                            <!-- GRÁFICA 4: Precio de estudiantes fijo -->
+                            <div class="chart-container">
+                                <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
+                                    <defs>
+                                        <linearGradient id="grad3d" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" style="stop-color:#fee140;stop-opacity:1" />
+                                            <stop offset="50%" style="stop-color:#fa709a;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+                                        </linearGradient>
+                                        <pattern id="grid3d" width="30" height="30" patternUnits="userSpaceOnUse">
+                                            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)"
+                                                stroke-width="1" />
+                                        </pattern>
+                                    </defs>
+                                    <rect width="600" height="400" fill="url(#grid3d)" />
+                                    <text x="320" y="30" font-size="16" font-weight="700" fill="#fff"
+                                        text-anchor="middle">Precio de estudiantes fijo</text>
+                                    <line x1="100" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)"
+                                        stroke-width="2" />
+                                    <line x1="100" y1="40" x2="100" y2="350" stroke="rgba(255,255,255,0.3)"
+                                        stroke-width="2" />
+                                    <line x1="100" y1="100" x2="550" y2="100" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="150" x2="550" y2="150" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="200" x2="550" y2="200" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="250" x2="550" y2="250" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <line x1="100" y1="300" x2="550" y2="300" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                    <!-- Data: (0,100) (1,200) (2,300) (3,400) (4,500) (5,600) -->
+                                    <polyline fill="none" stroke="url(#grad3d)" stroke-width="3" stroke-linecap="round"
+                                        points="100,300 188,250 276,200 364,150 452,100 540,50" opacity="0.9" />
+                                    <polygon points="100,300 188,250 276,200 364,150 452,100 540,50 540,350 100,350"
+                                        fill="url(#grad3d)" opacity="0.15" />
+                                    <circle cx="100" cy="300" r="5" fill="#fee140" />
+                                    <circle cx="188" cy="250" r="5" fill="#fee140" />
+                                    <circle cx="276" cy="200" r="5" fill="#fa709a" />
+                                    <circle cx="364" cy="150" r="5" fill="#fa709a" />
+                                    <circle cx="452" cy="100" r="5" fill="#f093fb" />
+                                    <circle cx="540" cy="50" r="5" fill="#f093fb" />
+                                    <!-- Y axis labels -->
+                                    <text x="90" y="354" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">0</text>
+                                    <text x="90" y="304" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">100</text>
+                                    <text x="90" y="254" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">200</text>
+                                    <text x="90" y="204" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">300</text>
+                                    <text x="90" y="154" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">400</text>
+                                    <text x="90" y="104" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">500</text>
+                                    <text x="90" y="58" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="end">600</text>
+                                    <!-- X axis labels -->
+                                    <text x="100" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">0 €</text>
+                                    <text x="188" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">1 €</text>
+                                    <text x="276" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">2 €</text>
+                                    <text x="364" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">3 €</text>
+                                    <text x="452" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">4 €</text>
+                                    <text x="540" y="370" font-size="11" fill="rgba(255,255,255,0.6)"
+                                        text-anchor="middle">5 €</text>
+                                    <text x="320" y="395" font-size="12" font-weight="600" fill="#fff"
+                                        text-anchor="middle">Precio de adultos (€)</text>
+                                    <text x="25" y="200" font-size="12" font-weight="600" fill="#fff"
+                                        text-anchor="middle" transform="rotate(-90 25 200)">Ingresos (€)</text>
+                                </svg>
+                                <div class="chart-legend">
+                                    <p>📊 <strong>Precio de estudiantes fijo:</strong> I = 100 + 100 × precio adultos
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </article>
 
-            <!-- CASO 4 -->
-            <article class="case-card">
-                <div class="case-number">04</div>
-                <div class="case-content">
-                    <h3>Modelo premium de máxima rentabilidad</h3>
-                    <p class="case-subtitle">Optimización de beneficios</p>
-                    
-                    <div class="case-body">
-                        <p>Estrategia agresiva manteniendo asequibilidad. Ideal si el marketing es efectivo.</p>
-                        
-                        <div class="table-wrapper">
-                            <table class="data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Actividad</th>
-                                        <th>Adultos</th>
-                                        <th>Estudiantes</th>
-                                        <th>Total por actividad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="activity-name">✏️ Talleres</td>
-                                        <td>3 €</td>
-                                        <td>2 €</td>
-                                        <td class="amount">100×3 + 50×2 = 400 €</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="activity-name">🎬 Teatro</td>
-                                        <td>3 €</td>
-                                        <td>2 €</td>
-                                        <td class="amount">100×3 + 50×2 = 400 €</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="activity-name">🎵 Concierto</td>
-                                        <td>4 €</td>
-                                        <td>3 €</td>
-                                        <td class="amount">100×4 + 50×3 = 550 €</td>
-                                    </tr>
-                                    <tr class="total-row">
-                                        <td colspan="4">✅✅ Beneficio total: <strong>1.050 €</strong> (después de pagar 300 € de alquiler)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
 
-        <!-- GRÁFICO -->
-        <section id="representacion" class="section">
-            <div class="section-header">
-                <h2>Análisis gráfico</h2>
-                <p class="section-subtitle">Visualización de la relación precio-ingresos</p>
-            </div>
-
-            <div class="chart-container">
-                <svg viewBox="0 0 600 400" class="chart-svg" preserveAspectRatio="xMidYMid meet">
-                    <defs>
-                        <linearGradient id="chartGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                            <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
-                        </linearGradient>
-                        <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
-                            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-                        </pattern>
-                    </defs>
-                    
-                    <!-- Grid -->
-                    <rect width="600" height="400" fill="url(#gridPattern)" />
-                    
-                    <!-- Axes -->
-                    <line x1="60" y1="350" x2="550" y2="350" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
-                    <line x1="60" y1="30" x2="60" y2="350" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
-                    
-                    <!-- Grid lines -->
-                    <line x1="60" y1="80" x2="550" y2="80" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-                    <line x1="60" y1="130" x2="550" y2="130" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-                    <line x1="60" y1="180" x2="550" y2="180" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-                    <line x1="60" y1="230" x2="550" y2="230" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-                    <line x1="60" y1="280" x2="550" y2="280" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-                    
-                    <!-- Data line -->
-                    <polyline fill="none" stroke="url(#chartGradient)" stroke-width="3" stroke-linecap="round" 
-                              points="80,310 160,265 240,220 320,175 400,130 480,85" opacity="0.9"/>
-                    
-                    <!-- Fill area under curve -->
-                    <polygon points="80,310 160,265 240,220 320,175 400,130 480,85 480,350 400,350 320,350 240,350 160,350 80,350" 
-                             fill="url(#chartGradient)" opacity="0.15"/>
-                    
-                    <!-- Data points -->
-                    <circle cx="80" cy="310" r="4" fill="#667eea"/>
-                    <circle cx="160" cy="265" r="4" fill="#667eea"/>
-                    <circle cx="240" cy="220" r="4" fill="#764ba2"/>
-                    <circle cx="320" cy="175" r="4" fill="#764ba2"/>
-                    <circle cx="400" cy="130" r="4" fill="#f093fb"/>
-                    <circle cx="480" cy="85" r="4" fill="#f093fb"/>
-                    
-                    <!-- Y axis labels -->
-                    <text x="50" y="355" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">0 €</text>
-                    <text x="50" y="285" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">100 €</text>
-                    <text x="50" y="235" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">200 €</text>
-                    <text x="50" y="185" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">300 €</text>
-                    <text x="50" y="135" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">400 €</text>
-                    <text x="50" y="85" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="end">500 €</text>
-                    
-                    <!-- X axis labels -->
-                    <text x="80" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">1 €</text>
-                    <text x="160" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">2 €</text>
-                    <text x="240" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">3 €</text>
-                    <text x="320" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">4 €</text>
-                    <text x="400" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">5 €</text>
-                    <text x="480" y="375" font-size="12" fill="rgba(255,255,255,0.6)" text-anchor="middle">6 €</text>
-                    
-                    <!-- Axis labels -->
-                    <text x="305" y="398" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Precio de entrada (€)</text>
-                    <text x="20" y="200" font-size="13" font-weight="600" fill="#fff" text-anchor="middle" transform="rotate(-90 20 200)">Ingresos totales (€)</text>
-                </svg>
-                
-                <div class="chart-legend">
-                    <p>📊 <strong>Relación precio-ingresos:</strong> A mayor precio, mayores ingresos potenciales, pero reducción en demanda a partir de 5 €</p>
-                </div>
-            </div>
         </section>
 
         <!-- CONCLUSIÓN -->
@@ -330,7 +739,7 @@
             <div class="recommendation-box">
                 <div class="recommendation-badge">✅ OPCIÓN RECOMENDADA</div>
                 <h3>Precios diferenciados con valor compartido</h3>
-                
+
                 <div class="price-display">
                     <div class="price-item">
                         <span class="price-label">Adultos</span>
@@ -376,7 +785,8 @@
 
                 <div class="alternative-box">
                     <h4>Alternativa simplificada</h4>
-                    <p>Si prefiere un precio único: <strong>2.50 €</strong> para todos (equilibrio entre accesibilidad e ingresos)</p>
+                    <p>Si prefiere un precio único: <strong>2.50 €</strong> para todos (equilibrio entre accesibilidad e
+                        ingresos)</p>
                 </div>
             </div>
         </section>
@@ -393,7 +803,8 @@
                     <div class="timeline-number">1</div>
                     <div class="timeline-content">
                         <h4>🎟️ Definir estructura de precios</h4>
-                        <p>Establecer oficialmente: Adultos 3 €, Estudiantes 2 € por actividad. Considerar descuentos para grupos.</p>
+                        <p>Establecer oficialmente: Adultos 3 €, Estudiantes 2 € por actividad. Considerar descuentos
+                            para grupos.</p>
                     </div>
                 </div>
 
@@ -401,7 +812,8 @@
                     <div class="timeline-number">2</div>
                     <div class="timeline-content">
                         <h4>📢 Campaña de promoción</h4>
-                        <p>Dirigir esfuerzos a estudiantes mediante carteles, redes sociales y anuncios en clase. Objetivo: garantizar aforo.</p>
+                        <p>Dirigir esfuerzos a estudiantes mediante carteles, redes sociales y anuncios en clase.
+                            Objetivo: garantizar aforo.</p>
                     </div>
                 </div>
 
@@ -409,7 +821,8 @@
                     <div class="timeline-number">3</div>
                     <div class="timeline-content">
                         <h4>⏰ Programar actividades</h4>
-                        <p>Espaciar las 3 actividades en horarios distintos para permitir que asistentes participen en varias sin conflictos.</p>
+                        <p>Espaciar las 3 actividades en horarios distintos para permitir que asistentes participen en
+                            varias sin conflictos.</p>
                     </div>
                 </div>
 
@@ -417,7 +830,8 @@
                     <div class="timeline-number">4</div>
                     <div class="timeline-content">
                         <h4>💻 Monitoreo de ventas</h4>
-                        <p>Controlar asistencia en tiempo real. Estar preparado para ajustar precios si falta demanda (máximo: 2 €).</p>
+                        <p>Controlar asistencia en tiempo real. Estar preparado para ajustar precios si falta demanda
+                            (máximo: 2 €).</p>
                     </div>
                 </div>
 
@@ -432,7 +846,9 @@
 
             <div class="important-note">
                 <h4>💡 Nota crítica</h4>
-                <p><strong>El éxito depende de la promoción a estudiantes.</strong> Con ~1.100 estudiantes en el instituto, llenar 50 asientos por actividad es completamente viable. La clave está en la difusión efectiva y el precio atractivo.</p>
+                <p><strong>El éxito depende de la promoción a estudiantes.</strong> Con ~1.100 estudiantes en el
+                    instituto, llenar 50 asientos por actividad es completamente viable. La clave está en la difusión
+                    efectiva y el precio atractivo.</p>
             </div>
         </section>
     </main>
@@ -462,7 +878,7 @@
 
     <script>
         // =====================================================
-        // SISTEMA DE ANIMACIONES - SCROLL REVEAL LIMPIO
+        // SISTEMA DE ANIMACIONES - SCROLL REVEAL OPTIMIZADO
         // =====================================================
 
         // 1. SMOOTH SCROLL en enlaces internos
@@ -476,107 +892,45 @@
             });
         });
 
-        // 2. ANIMACIONES DE ENTRADA AL HACER SCROLL
-        function initScrollAnimations() {
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -100px 0px'
-            };
-
+        // 2. OBSERVER ÚNICO para animaciones de scroll + contadores
+        (function initAnimations() {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate-in');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
+                    if (!entry.isIntersecting) return;
 
-            const elementsToAnimate = document.querySelectorAll(
+                    const el = entry.target;
+
+                    // Animación de entrada
+                    el.classList.add('animate-in');
+
+                    // Si es un contador numérico, animar el número
+                    if (el.classList.contains('card-value')) {
+                        const finalValue = parseInt(el.textContent);
+                        if (!isNaN(finalValue) && finalValue > 0) {
+                            let start = null;
+                            const duration = 1500;
+                            const step = (ts) => {
+                                if (!start) start = ts;
+                                const progress = Math.min((ts - start) / duration, 1);
+                                el.textContent = Math.floor(progress * finalValue);
+                                if (progress < 1) requestAnimationFrame(step);
+                            };
+                            requestAnimationFrame(step);
+                        }
+                    }
+
+                    observer.unobserve(el);
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
+
+            // Observar elementos de scroll
+            document.querySelectorAll(
                 'section, article, .hero-content, .info-card, .case-card, ' +
                 '.chart-container, .data-table, .formula-box, .recommendation-box, ' +
-                '.timeline-item, .strategy-option, .benefit-item, .insight-box'
-            );
-
-            elementsToAnimate.forEach(el => observer.observe(el));
-        }
-
-        // 3. ANIMACIÓN DE NÚMEROS (CONTADOR)
-        function initNumberAnimations() {
-            const cardValues = document.querySelectorAll('.card-value');
-
-            cardValues.forEach(element => {
-                const finalValue = parseInt(element.textContent);
-                
-                if (isNaN(finalValue) || finalValue <= 0) return;
-
-                let hasAnimated = false;
-
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting && !hasAnimated) {
-                            hasAnimated = true;
-                            let startTimestamp = null;
-                            const duration = 1500;
-
-                            const step = (timestamp) => {
-                                if (!startTimestamp) startTimestamp = timestamp;
-                                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                                const currentValue = Math.floor(progress * finalValue);
-                                element.textContent = currentValue;
-
-                                if (progress < 1) {
-                                    requestAnimationFrame(step);
-                                }
-                            };
-
-                            requestAnimationFrame(step);
-                            observer.unobserve(element);
-                        }
-                    });
-                }, { threshold: 0.5 });
-
-                observer.observe(element);
-            });
-        }
-
-        // 4. EFECTO INTERACTIVO DE CURSOR
-        function initInteractiveGlow() {
-            const interactiveElements = document.querySelectorAll(
-                '.info-card, .case-card, .strategy-option, .benefit-item, .recommendation-box'
-            );
-
-            interactiveElements.forEach(element => {
-                element.addEventListener('mousemove', (e) => {
-                    const rect = element.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
-                    element.style.setProperty('--mouse-x', x + 'px');
-                    element.style.setProperty('--mouse-y', y + 'px');
-                });
-
-                element.addEventListener('mouseleave', () => {
-                    element.style.setProperty('--mouse-x', '50%');
-                    element.style.setProperty('--mouse-y', '50%');
-                });
-            });
-        }
-
-        // INICIALIZAR TODO
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', () => {
-                initScrollAnimations();
-                initNumberAnimations();
-                initInteractiveGlow();
-            });
-        } else {
-            initScrollAnimations();
-            initNumberAnimations();
-            initInteractiveGlow();
-        }
+                '.timeline-item, .strategy-option, .benefit-item, .insight-box, .card-value'
+            ).forEach(el => observer.observe(el));
+        })();
     </script>
 </body>
+
 </html>
-
-
-
